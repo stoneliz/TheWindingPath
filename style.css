@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name: The Winding Path_demo 0.2
+Author: Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zho
+Author URI: http://www.phagens.com/web10
+Description: Web210 WordPress Project_The Winding Path
+Version: 1.0
+*/
+
+
+/* 
+Purple: http://slayeroffice.com/tools/color_palette/?hex=39275B
+Gold: http://slayeroffice.com/tools/color_palette/?hex=EBB700
+*/
+
+* { margin: 0; padding: 0; }
+
+html {
+	background: white; /* W3C */
+	}
+.headerlinks{
+    width: 22%;
+  
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.headerlinks ul > li a{
+    color: black;
+}
+.headerlinks ul > li {
+    list-style-type: none;   
+    color: black;
+    font-size: 20px;       
+    float: right;
+    padding-right: 10px;
+    margin-right: 35px;
+	
+	}
+.headerlinks .donate {
+    z-index: 999999999999;
+    max-width: 180px;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 10px;    
+    float: right;
+    padding-right: 15px;
+}
+body {
+    background: white;
+    max-width: 940px;
+    width: 100%;
+    margin:auto;
+    /*
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%; /* sets all type sizes to a default 16px 
+	color: #000000;
+	background-image: url(images/bg-boxes.png);
+	background-position: top ; /* positioned to the top of page 
+	background-repeat: repeat-x; /* repeat horizontally */
+	}
+	
+ol, ul {
+	font-size: 1em;  /* 16px */
+	line-height: 150%; /* 24px */
+	margin-bottom: 10px;
+	list-style-position: inside;
+    text-decoration: none;  
+	}	
+
+#logo
+{
+ padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+img{max-width: 100%;}
+#header {
+ 
+	max-width: 940px; /* change to a max-width */
+	margin: 0 auto;
+	padding-top: 20px; /* change the padding */
+	/*border: 1px solid black;*/
+	}
+	
+	#header a {
+		color: #000; /* white */
+		text-decoration: none; /* remove undeline */
+	}
+	
+	#header a:hover {
+		color: #888; 
+	}	
+	
+	#toggle {
+		display: none;
+	}
+	
+
+	#navigation {
+        width: 100%;
+		max-width:925px;
+		padding-top: 1em;
+		margin:0 auto;
+        clear:both;
+        height:2.5em;  
+        background-color:#ccc;
+        border: 2px solid #888;
+}
+	
+		#navigation ul{
+		text-align:center;
+		max-width:920px;
+		margin:auto;}
+		
+		#navigation li{
+		display:inline;
+		width:20%;
+		float:left;
+		}
+		
+		#navigation a{
+        font-weight: bold;
+		color:#000000;
+		text-decoration:none;
+		display:block;
+		}
+		
+		#navigation a:hover
+		{color:#999;
+}
+
+h2{
+    padding: 20px;
+    padding-left: 0;
+}	
+#middle {
+	max-width: 940px; /* change to a max-width */
+	background-image: url(/*images/bg-960.png*/);
+	background-position: center;
+	background-repeat: repeat-y;	
+	overflow: hidden; /* prevents the great collapse */
+	margin: 0 auto;
+	padding: 0; /* change padding to 20px all around */
+	border-radius: 10px; /* adds rounded corners */
+	}
+.middledonate {
+    z-index: 999999999999;
+    position: absolute;
+    left: 60px;
+    top: 250px;
+    
+}	
+	#middle a {
+		color: #888888; 
+	}
+	
+	#middle a:hover {
+		color: #888888; 
+	}
+	
+	#widgets {
+		overflow: hidden;
+	}
+#widgets section.widget-item a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:  bold;
+    color:#000;
+}
+#widgets section.widget-item ul > li{
+ list-style-type: none;   
+    display: inline-block;
+    font-size: 18px;
+    font-weight:  bold;
+   padding: 10px;
+    color:#000;
+}
+	#widgets section.widget-item {
+        width: 100%;
+		max-width: 300px;
+		float: left;
+		margin-right: 10px;
+	}
+	
+	#widgets section.widget-item:last-child {
+	    float: right;
+        margin-right: 0;
+	}
+	
+#footer {    
+	max-width: 940px; /* change to a max-width */
+	margin: 20px auto;
+	padding: 20px 0; 
+	color: #000000; /* give all text elements a color of white */
+    font-weight: bold;
+    font-size: 12px;  
+    background-color: #999999;
+    
+
+	}
+		#footer ul, #footer p {            
+		text-align:center;
+		width:100%;
+		margin:0 auto;}
+
+#footer ul > li{
+ list-style-type: none;   
+    display: inline-block;
+   padding: 10px;
+}
+
+#footer ul > li a{   
+    text-decoration: none;
+}
+	
+	#footer a {
+		color: #000; /* white */
+	}
+	
+	#footer a:hover {
+		color: #888; /* gold */
+	}
+	
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {
+	
+	html { -webkit-text-size-adjust: none; }
+	
+	#middle {
+		padding: 20px 02.04%; /* 20px / 980px */
+	}
+	
+	#content {
+		width: 65.95%; /* 620px / 940px */
+	}
+	
+	#sidebar {
+		width: 31.91%; /* 300px / 940px */
+	}
+	
+	#widgets section.widget-item {
+		width: 31.91%; /* 300px / 940px */
+		margin-right: 02.12%; /* 20px / 940px */
+	}
+	
+}
+
+/* Tablet Screen Set to 800px or Below  */
+@media screen and (max-width: 800px) {
+	
+	#header {
+		padding-left: 02.04%; /* 20px / 980px */
+		padding-right: 02.04%;
+	}
+	
+	#navigation {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+	#middle {
+		border-radius: 0px; /* removes rounded corners */
+	}
+	
+	#footer {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+    .headerlinks, .pxwidth {
+        display: none;
+    }
+	#header {
+        border: 2px solid #888;
+        background: #ccc;
+        padding: 0;
+        margin: 7px;
+        height: 50px;
+	}
+    .middledonate{
+        width: 25%;
+        left: 40px;
+        top:85px;
+    }
+	
+	#logo {
+        
+        width: 180px;
+       padding: 0;
+	}
+
+
+	#toggle { 
+        position: absolute;
+		display: block; /* make our toggle visible */
+		float: right; /* float our toggle right */
+		top: 21px; /* move this into place */
+        right: 20px;
+	}
+	
+	#navigation {
+		display: none; /* hide our navigation */
+		
+        } 
+	
+	#middle {
+		padding: 20px 10px;
+	}
+	
+	#content {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	#sidebar {
+		width: 100%;
+		float: none;
+		padding-top: 20px;
+		border-top: 1px solid #888888;
+	}
+	
+	#widgets section.widget-item {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+    #widgets section.widget-item img{
+        max-width: 100%;
+    }
+	#footer {
+        margin: auto 7px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
+
+	
