@@ -10,7 +10,7 @@
 </ul> 
     
     <p>CopyRights&copy;2017     |    All Right Reserved </p>
-    <p>Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zho</p>
+    <p>Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zhu</p>
 <!-- End Footer -->
 
 <!-- Start WP Footer -->

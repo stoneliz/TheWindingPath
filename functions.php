@@ -3,7 +3,7 @@
  Theme Name:   The Winding Path
  Theme URI:    http://www.phagens.com/web10
  Description:  The Winding Path
- Author:       Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zho
+ Author:       Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zhu
  Author URI:   http://example.com
  Template:     The Winding Path
  Version:      1.0.0

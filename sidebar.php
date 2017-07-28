@@ -21,8 +21,12 @@
     ?></ul>
     <?php endif; // end if we are in "pages" ?>
     <?php if (!(is_page())) : // if we are not in "pages"... ?>
-    <h2 class="sub-navigation-title">Blog</h2>
-    <ul class="sub-navigation-items"><?php wp_list_categories(array('title_li' => __(''))); // ...list the categories with no title ?></ul>
+    <div style="width:300px;height:150px;float:right;background:#E0E0E0;padding:10px">
+    <h2 class="sub-navigation-title">CATEGORIES</h2>
+    <ul class="sub-navigation-items" > 
+    <?php wp_list_categories(array('title_li' => '')); // ...list the categories with no title 		?>
+    </ul> 
+    </div>
     <?php endif; ?>
     </div>
     <!-- End Sub-Navigation -->
@@ -34,7 +38,7 @@
     <!-- End Quotes -->
     
     <!-- Begin Dynamic Sidebar -->
-    <?php dynamic_sidebar(1); // call our widgets ?>
+    <?php dynamic_sidebar(1); // call our widgets ?> 
     <!-- End Dynamic Sidebar -->
        
 </div>
