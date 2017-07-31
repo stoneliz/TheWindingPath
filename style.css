@@ -99,7 +99,8 @@ ol, ul {
 		padding-top: 1em;
 		margin:0 auto;
         clear:both;
-        height:2.5em;  
+        min-height: 2.5em;  
+        height: auto;
         background-color:#ccc;
         border: 2px solid #888;
         position: relative;
@@ -198,8 +199,9 @@ h2{
 		color: #888888; 
 	}
 	
+/*--------------------------------------------------------------------------*/	
 	#widgets {
-      
+    
 		overflow: hidden;
 	}
 #widgets section.widget-item a{
@@ -227,9 +229,69 @@ h2{
 	    float: right;
         margin-right: 0;
 	}
+input{
+    font-size: 16px;
+}
+#sidebar {
+       text-decoration: none;
+		width: 35%;
+		float: right;
+    margin: 0 auto;
+    
+	}
+	
+	#sidebar ul {
+	  
+	}
+	
+	#sidebar ul li {
+      
+	list-style-type: none;
+        font-size: 16px;
+	}
+#sidebar ul li a {
+    line-height: 1.9em;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+color: #000000;}
+.post{
+    width:65%;
+    float:left;
+    margin: 0 auto;
+}
+.postContent{
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+	#sidebar blockquote {
+		position: relative;
+		padding: 10px;
+		margin: 20px 0;
+		border-top: 2px solid #777777;
+		border-bottom: 2px solid #777777;
+		font-style: italic;
+	}
+	
+	#sidebar blockquote:before {
+		position: absolute;
+		width: 24px;
+		height: 20px;
+		font-size: 3em;
+		color: #777777;
+		content:'“';
+		background-color: #999;
+		top: -18px;
+		left: -4px;
+			
+	}
+/*--------------------------------------------------------------------------*/
 
 /*---------------------------#content--------------------------------------------*/
 	#content {
+        padding: 10px auto 10px 10px;
 		overflow: hidden;
 	}
 #content h2, #content h4{
@@ -298,41 +360,6 @@ h2{
 		
 		
 
-	
-	#sidebar {
-		width: 300px;
-		float: right;
-	}
-	
-	#sidebar ul {
-	
-	}
-	
-	#sidebar ul li {
-	
-	}
-	
-	#sidebar blockquote {
-		position: relative;
-		padding: 10px;
-		margin: 20px 0;
-		border-top: 2px solid #777777;
-		border-bottom: 2px solid #777777;
-		font-style: italic;
-	}
-	
-	#sidebar blockquote:before {
-		position: absolute;
-		width: 24px;
-		height: 20px;
-		font-size: 3em;
-		color: #777777;
-		content:'“';
-		background-color: #999;
-		top: -18px;
-		left: -4px;
-			
-	}
 /*--------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------*/
 	
@@ -403,6 +430,13 @@ h2{
 
 /* Mobile Screen Set to 600px or Below  */
 @media screen and (max-width: 700px) {
+#button.middledonate{
+     margin-right: 10px;
+    margin-top: 190px;    
+    float: right;
+    padding-right: 15px;
+ }
+
     .headerlinks, .pxwidth {
         display: none;
     }
@@ -447,26 +481,45 @@ h2{
 	}
 	
 	#content {
+
 		width: 100%;
 		float: none;
-		margin-bottom: 20px;
+		margin: 20px;
 	}
+.post{
+
+padding: 10px;
+    width:95%;
+    margin: 0 auto;
+}
+.post img{max-width:90%;}
+.post p{
+padding-right: 20px;
+}
+    .leftColumn{
+padding: 10px;
+  width:95%;
+}
+.postContent{
+width:95%;
+padding: 10px;}
+
 	
 	#sidebar {
-		width: 100%;
-		float: none;
-		padding-top: 20px;
-		border-top: 1px solid #888888;
+
+
+padding: 10px;
+    width:95%;
+    margin: 0 auto;
+		
 	}
-	
+
 	#widgets section.widget-item {
-		width: 100%;
-		float: none;
-		margin-right: 0;
-		margin-bottom: 20px;
+		margin: 0 auto;
+width:95%;
 	}
     #widgets section.widget-item img{
-        max-width: 100%;
+        max-width: 80%;
     }
 	#footer {
         margin: auto 7px;

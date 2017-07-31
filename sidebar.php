@@ -21,7 +21,7 @@
     ?></ul>
     <?php endif; // end if we are in "pages" ?>
     <?php if (!(is_page())) : // if we are not in "pages"... ?>
-    <div style="width:300px;height:150px;float:right;background:#E0E0E0;padding:10px">
+    <div style="width:90%;height:300px;float:center;background:#E0E0E0;padding:10px">
     <h2 class="sub-navigation-title">CATEGORIES</h2>
     <ul class="sub-navigation-items" > 
     <?php wp_list_categories(array('title_li' => '')); // ...list the categories with no title 		?>
