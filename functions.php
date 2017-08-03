@@ -18,7 +18,7 @@ register_sidebar(array(
 	'name' => 'events',
 	'id' => 'events',
 	'description' => 'Widget to display events list',
-	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'before_widget' => '<div id="events-widget">',
 	'after_widget' => '</div>',
 	'before_title' => '<h2>',
 	'after_title' => '</h2>',
