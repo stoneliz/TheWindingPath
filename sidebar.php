@@ -21,7 +21,7 @@
     ?></ul>
     <?php endif; // end if we are in "pages" ?>
     <?php if (!(is_page())) : // if we are not in "pages"... ?>
-    <div style="width:300px;height:150px;float:right;background:#E0E0E0;padding:10px">
+    <div class="sidebar">
     <h2 class="sub-navigation-title">CATEGORIES</h2>
     <ul class="sub-navigation-items" > 
     <?php wp_list_categories(array('title_li' => '')); // ...list the categories with no title 		?>
@@ -38,8 +38,50 @@
     <!-- End Quotes -->
     
     <!-- Begin Dynamic Sidebar -->
-    <?php dynamic_sidebar(1); // call our widgets ?> 
+    <?php dynamic_sidebar(1); // call our widgets ?>
     <!-- End Dynamic Sidebar -->
        
 </div>
+
+    <!-- single.php has the same style code below -->
+    <style>    
+		.post {
+			width:95%;
+			height:auto;
+			float:center;
+			margin:0 auto;
+		}
+		
+		.leftColumn {
+			width:60%;
+			float:left;
+		}
+		
+		.postParagraph {
+			width:90%;
+			margin:0 auto;
+		}
+		
+		.sidebar {
+			width:35%;
+			float:right;
+			border:1px solid #000;
+			background:#E0E0E0;
+			padding:10px"
+		}
+		
+     	@media (max-width: 768px) {			        			
+			.leftColumn {				
+				width:100%;
+				float:none;
+			}	
+			
+	        .sidebar {											
+				width:50%;	
+				float:none;
+				margin:0 auto;
+			}	 
+			.post {margin: 0;}
+         }      
+    </style>
 <!-- End Sidebar -->
