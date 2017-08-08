@@ -4,12 +4,12 @@
 <!-- Begin Footer -->
 <div id="footer">
     
-<ul class="headerli">    
-<li class="login"><?php wp_loginout(); ?></li>
-<li class="faq"><a href="#">FAQ</a></li>     
-</ul> 
+	<ul class="headerli">    
+		<li class="login"><?php wp_loginout(); ?></li>
+		<li class="faq"><a href="#">FAQ</a></li>     
+	</ul> 
     
-    <p>CopyRights&copy;2017     |    All Right Reserved </p>
+    <p>Copyright &copy;2017     |    All Rights Reserved </p>
     <p>Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zhu</p>
 <!-- End Footer -->
 

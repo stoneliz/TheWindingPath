@@ -8,7 +8,7 @@ Version: 1.0
 */
 #toggle {
 		display: none;
-}
+	}
 
 div#navigation.menu-wireframemenu-container {
         width: 100%;
@@ -148,7 +148,8 @@ div#navigation.menu-wireframemenu-container {
 @media screen and (max-width: 600px) {
     
 
-}
+	
+	}
 
 
 

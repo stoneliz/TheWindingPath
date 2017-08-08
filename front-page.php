@@ -3,9 +3,9 @@
 <!-- Begin Flex Slider -->
     <div class="flexslider">
         <ul class="slides">
-        <li><img src="http://phagens.com/images/banner.png" width="940" height="400" alt="Image One"></li>
-        <li><img src="http://phagens.com/images/banner1.png" width="940" height="400" alt="Image Two"></li>
-        <li><img src="http://phagens.com/images/banner2.png" width="940" height="400" alt="Image Three"></li>
+        <li><img src="http://phagens.com/images/banner.png" max-width="940" alt="Image One"></li>
+        <li><img src="http://phagens.com/images/banner1.png" max-width="940" alt="Image Two"></li>
+        <li><img src="http://phagens.com/images/banner2.PNG" max-width="940" alt="Image Three"></li>
         </ul>
         
         <a href="#">     
@@ -18,12 +18,13 @@
     <div id="widgets">
         <section class="widget-item">
          <h2>ABOUT</h2>
-        <?php if ( have_posts() ) : while( have_posts() ) : the_post(); // start loop one ?>
+			
+      <?php if ( have_posts() ) : while( have_posts() ) : the_post(); // start loop one ?>
         <?php the_content(''); // get the home page's content ?>
         <?php endwhile; endif; // end loop one ?>
         </section>
         <section class="widget-item">
-        <h2>EVENTS</h2>
+        <h2>NEWS</h2>
         <ul>
 		<?php rewind_posts(); // stop loop one ?>
         <?php query_posts('showposts=4'); // give directions to loop two ?>
@@ -33,10 +34,8 @@
         </ul>
         </section>
         <section class="widget-item">
-        <h2>NEWS</h2>
-        <img src="  
-http://fpoimg.com/300x300?text=CALENDAR&bg_color=777777&text_color=000000
- " width="300" height="300" />
+        <h2>EVENTS</h2>
+		<?php echo do_shortcode("[ecs-list-events thumb='true' thumbsize='large']"); ?>
         </section>
     </div>
     <!-- End Widgets -->
