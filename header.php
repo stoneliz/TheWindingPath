@@ -21,7 +21,7 @@
 <!-- Begin Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
-<!-- <script src="<?php bloginfo('template_directory'); ?>/scripts/navigation.js"></script> -->
+
 <!-- End Scripts -->
 
 <!-- Begin Flex Slider -->
@@ -52,8 +52,11 @@
 <body <?php body_class();?>>
 
 <!-- Begin Header -->
+
 <div id="header">
-<div class="headerlinks">   
+<img id="ruler" class="ruler" src="http://phagens.com/images/940pxwidth.png" max-width="100%" alt="ruler"> 
+    
+<div class="headerlinks">  
  
 <ul class="headerli">    
 <li class="login"><?php wp_loginout(); ?></li>
@@ -66,17 +69,19 @@
 </div>
     
 <div class="logo">    
-    <a href="https://www.phagens.com/web210/">
-        <img id="logo" src="https://www.phagens.com/web210/wp-content/uploads/2017/07/logo-green.png" alt="logo">        
+    <a href="https://www.phagens.com/web210/wireframe/">
+        <img id="logo" src="https://www.phagens.com/images/430x120logo.png" alt="logo">        
     </a>
     </div>
     
-<img id="toggle" src="http://phagens.com/images/img-toggle.png" width="25" height="25" alt="Toggle Menu">
+
 </div>
 <!-- End Header -->
 
 <!-- Begin Navigation -->
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', 'items_wrap' => '<ul id="navigation-items" class="%2$s">%3$s</ul>', ) ); ?>
+    
+    <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation',) ); ?>
+    <img id="toggle" src="http://phagens.com/images/img-toggle.png" class="toggle-icon" onclick="myFunction()" width="25" height="25" alt="Toggle Menu">
 <!-- End Navigation -->
 
 <!-- Begin Content -->

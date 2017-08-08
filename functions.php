@@ -1,7 +1,7 @@
 <?php
 /*
  Theme Name:   The Winding Path
- Theme URI:    http://www.phagens.com/web10
+ Theme URI:    http://www.phagens.com/web10/wireframe/
  Description:  The Winding Path
  Author:       Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zhu
  Author URI:   http://example.com
@@ -10,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  http://www.phagens.com/web10
+ Text Domain:  http://www.phagens.com/web10/wireframe/
 */
 
 // Register My Sidebar

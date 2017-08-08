@@ -1,35 +1,26 @@
-/* NAVIGATION ul #menu-main-menu->.menu-wireframemenu-container*/
-/*
-Theme Name: The Winding Path_Wireframe 0.3
-Author: Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zhu
-Author URI: http://www.phagens.com/web10
-Description: Web210 WordPress Project_The Winding Path
-Version: 1.0
-*/
-#toggle {
+/* NAVIGATION ul.menu-moremenu-container*/
+	#toggle {
 		display: none;
 	}
-
-div#navigation.menu-wireframemenu-container {
+#navigation.menu-moremenu-container {
         width: 100%;
 		margin:0 auto;
         clear:both;
-        background-color:#ccc;
+        background-color:#888;
         border: 2px solid #999;
         position: relative;
         display: inline-block;
 	}
 	
-	#navigation-items {
+	#menu-moremenu {
 		text-align: center;
 		margin: 0 auto;
 		position: relative;
         text-decoration: none;
-	}
+		}
 	
-	#navigation-items > li {
+	#menu-moremenu > li {
         width: 200px;
-        vertical-align: middle;
         text-decoration: none;
 		font-size: 1.25em;
 		line-height: 100%;
@@ -37,69 +28,67 @@ div#navigation.menu-wireframemenu-container {
 		list-style: none;
 		padding: 20px;
         position: relative;
-        
-	}
-	    
-        #navigation-items li:hover{
-      	    background-color: #fff;
-        }
-
-	    #navigation-items > li > a {
-            text-decoration: none;
-            font-weight: bold;
-		    color:#000000;
-		    text-decoration:none;
-		    display:block;
-            text-transform: uppercase;
 		}
+#menu-moremenu li.menu-item-48 {display: none;}
+	    #menu-moremenu li:hover{
+      	background-color: #fff;
+    }
+		#menu-moremenu > li > a {
+       text-decoration: none;
+        font-weight: bold;
+		color:#000000;
+		text-decoration:none;
+		display:block;
+        text-transform: uppercase;
+			}
 			
-	    #navigation-items > li > a:before {			
+		#menu-moremenu > li > a:before {			
 			color: #000000;			
 			position: relative;
 			top: -2px;
 			left: -20px;
 		}
 		
-	    #navigation-items > li > a:after {
+		#menu-moremenu > li > a:after {
 			color: #cccccc;
 			position: relative;
 			top: -2px;
 			right: -20px;
 		}
 		
-		#navigation-items > li > a:hover
-		{
+		#menu-moremenu > li > a:hover{
 			color: #999;
-		}
+			}
 			
-		#navigation-items > li > a:hover:before, 
-        #navigation-items > li > a:before, 
-		#navigation-items li.menu-item-143 > a:before {
+		#menu-moremenu > li > a:hover:before, 
+		#menu-moremenu > li > a:before, 
+		#menu-moremenu li.menu-item-40 > a:before {
 			color: #ccc;
-		}
+			}
 			
-		#navigation-items > li > a:hover:after,
-		#navigation-items > li > a:after,
-        #navigation-items li.menu-item-143 > a:after {
+		#menu-moremenu > li > a:hover:after, 
+		#menu-moremenu > li > a:after,
+		#menu-moremenun li.menu-item-40 > a:after {
 			color: #ccc;
-		}
+			}
 						
-	#navigation-items ul.sub-menu {
+	#menu-moremenu ul.sub-menu {
         text-decoration: none;
 		display: none;
 		position: absolute;
 		background-color: #cccccc;		
-		z-index: 500;	
+		z-index: 500;		
+		
 	}
 	
-	#navigation-items li:hover ul.sub-menu {
+	#menu-moremenu li:hover ul.sub-menu {
         margin-left: -20px;
         margin-top: 20px;
 		display: block;
         width: 240px;
 	}
 	
-	#navigation-items ul.sub-menu li {
+	#menu-moremenu ul.sub-menu li {
 		list-style: none;
 		font-size: 1em;
 		display: block;
@@ -108,14 +97,14 @@ div#navigation.menu-wireframemenu-container {
         position: relative;
         white-space: nowrap;
         text-decoration: none;
-	}
+		}
 		
-	#navigation-items ul.sub-menu li a {
+	#menu-moremenu ul.sub-menu li a {
         text-decoration: none;
 		color: #000000;
         padding: 12px 14px;
         display: block;
-	}
+		}
 
 /* Desktop Screen Set to 1024px or Below */
 @media screen and (max-width: 1024px) {
@@ -123,33 +112,36 @@ div#navigation.menu-wireframemenu-container {
 
 }
 
-/* Desktop Screen Set to 1230px or Below */
+/* Desktop Screen Set to 1280px or Below */
 @media screen and (max-width: 1230px) {
-#navigation-items > li {
+#menu-moremenu > li {
         width: 150px;
-		font-size: 1.1em;
+		font-size: 1.15em;
     }
-#navigation-items li:hover ul.sub-menu {
+#menu-moremenu li:hover ul.sub-menu {
         width: 190px;
 	}
-}
-	
-/* Mobile Screen Set to 769px or Below */
-@media screen and (max-width: 769px) {
-		#toggle {
-		display: block;
-		}
-	#navigation .menu-wireframemenu-container { 
-        overflow: hidden;
-    }
-}
+}	
 
-/* Tablet Screen Set to 600px or Below */
-@media screen and (max-width: 600px) {
+
+/* Tablet Screen Set to 769px or Below */
+@media screen and (max-width: 769px) {    
+#navigation.menu-moremenu-container {
+    overflow: hidden;   
+}
+#menu-moremenu li.menu-item-48{display: block;}
+#toggle{display: block;}
+/*
+ #menu-moremenu li.menu-item-38,
+ #menu-moremenu li.menu-item-40,
+ #menu-moremenu li.menu-item-44,
+ #menu-moremenu li.menu-item-39,
+ #menu-moremenu li.menu-item-41
+    {display: none;}   
+*/
+
+@media screen and (max-width: 600px) { 
     
+ 
 
-	
-	}
-
-
-
+}
