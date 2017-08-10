@@ -143,7 +143,7 @@
 <li class="faq"><a href="#">FAQ</a></li>     
 </ul>   
  
-      <a href="#"> 
+      <a href=" https://www.gofundme.com/gwt453zk" target="blank"> 
 <img id="button" class="donate" src="http://phagens.com/images/donateButton.png" alt="donate">   
   </a>      
 </div>
