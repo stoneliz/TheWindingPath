@@ -2,14 +2,14 @@
 
 <!-- Begin Flex Slider -->
     <div class="flexslider">
-        <ul class="slides">
-        <li><img src="http://phagens.com/images/banner.png" width="940" height="400" alt="Image One"></li>
-        <li><img src="http://phagens.com/images/banner1.png" width="940" height="400" alt="Image Two"></li>
-        <li><img src="http://phagens.com/images/banner2.png" width="940" height="400" alt="Image Three"></li>
-        </ul>
+        <div class="slides">
+        <li><img src="http://phagens.com/images/banner.png" alt="Image One"></li>
+        <li><img src="http://phagens.com/images/banner1.png" alt="Image Two"></li>
+        <li><img src="http://phagens.com/images/banner2.PNG" alt="Image Three"></li>
+        </div>
         
         <a href="#">     
-<img id="button" class="middledonate" src="http://phagens.com/images/donateButton.png" alt="logo">   
+<img id="button" class="middledonate" src="http://phagens.com/images/middonateButton.png" alt="logo">   
   </a>
     </div>
     <!-- End Flex Slider -->

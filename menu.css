@@ -1,0 +1,147 @@
+/* NAVIGATION ul.menu-moremenu-container*/
+	#toggle {
+		display: none;
+	}
+#navigation.menu-moremenu-container {
+        width: 100%;
+		margin:0 auto;
+        clear:both;
+        background-color:#888;
+        border: 2px solid #999;
+        position: relative;
+        display: inline-block;
+	}
+	
+	#menu-moremenu {
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+        text-decoration: none;
+		}
+	
+	#menu-moremenu > li {
+        width: 200px;
+        text-decoration: none;
+		font-size: 1.25em;
+		line-height: 100%;
+		display: inline-block;
+		list-style: none;
+		padding: 20px;
+        position: relative;
+		}
+#menu-moremenu li.menu-item-48 {display: none;}
+	    #menu-moremenu li:hover{
+      	background-color: #fff;
+    }
+		#menu-moremenu > li > a {
+       text-decoration: none;
+        font-weight: bold;
+		color:#000000;
+		text-decoration:none;
+		display:block;
+        text-transform: uppercase;
+			}
+			
+		#menu-moremenu > li > a:before {			
+			color: #000000;			
+			position: relative;
+			top: -2px;
+			left: -20px;
+		}
+		
+		#menu-moremenu > li > a:after {
+			color: #cccccc;
+			position: relative;
+			top: -2px;
+			right: -20px;
+		}
+		
+		#menu-moremenu > li > a:hover{
+			color: #999;
+			}
+			
+		#menu-moremenu > li > a:hover:before, 
+		#menu-moremenu > li > a:before, 
+		#menu-moremenu li.menu-item-40 > a:before {
+			color: #ccc;
+			}
+			
+		#menu-moremenu > li > a:hover:after, 
+		#menu-moremenu > li > a:after,
+		#menu-moremenun li.menu-item-40 > a:after {
+			color: #ccc;
+			}
+						
+	#menu-moremenu ul.sub-menu {
+        text-decoration: none;
+		display: none;
+		position: absolute;
+		background-color: #cccccc;		
+		z-index: 500;		
+		
+	}
+	
+	#menu-moremenu li:hover ul.sub-menu {
+        margin-left: -20px;
+        margin-top: 20px;
+		display: block;
+        width: 240px;
+	}
+	
+	#menu-moremenu ul.sub-menu li {
+		list-style: none;
+		font-size: 1em;
+		display: block;
+		text-transform: uppercase;
+		border: 1px solid #999999;
+        position: relative;
+        white-space: nowrap;
+        text-decoration: none;
+		}
+		
+	#menu-moremenu ul.sub-menu li a {
+        text-decoration: none;
+		color: #000000;
+        padding: 12px 14px;
+        display: block;
+		}
+
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {
+	
+
+}
+
+/* Desktop Screen Set to 1280px or Below */
+@media screen and (max-width: 1230px) {
+#menu-moremenu > li {
+        width: 150px;
+		font-size: 1.15em;
+    }
+#menu-moremenu li:hover ul.sub-menu {
+        width: 190px;
+	}
+}	
+
+
+/* Tablet Screen Set to 769px or Below */
+@media screen and (max-width: 769px) {    
+#navigation.menu-moremenu-container {
+    overflow: hidden;   
+}
+#menu-moremenu li.menu-item-48{display: block;}
+#toggle{display: block;}
+/*
+ #menu-moremenu li.menu-item-38,
+ #menu-moremenu li.menu-item-40,
+ #menu-moremenu li.menu-item-44,
+ #menu-moremenu li.menu-item-39,
+ #menu-moremenu li.menu-item-41
+    {display: none;}   
+*/
+
+@media screen and (max-width: 600px) { 
+    
+ 
+
+}
