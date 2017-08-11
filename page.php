@@ -1,60 +1,68 @@
 <?php get_header(); ?>
-<!-- Begin Content -->
 
-<!-- Begin place holder Content --Content-remove this when each page filled -->
-    <div id="content">
+    <!-- Begin Content -->
+    <div class="post">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
+        <div class="leftColumn">                                        
+            <div class="postParagraph">
+            <h2><?php the_title(); // the posting title ?></h2>
+            <?php the_content(''); // posting written content ?>        
+            </div>    
+        </div>
+    <?php endwhile; endif; // end the loop ?>    
+    </div>
+    <!-- End Content -->
+
+    <style>    
+		.post {
+			width:95%;
+			height:100%;
+			float:center;
+			margin:0 auto;
+		}
+		
+		.leftColumn {
+			width:60%;
+			float:left;
+		}
+		
+		.postParagraph {
+			width:90%;
+			margin:0 auto;
+		}
+		
+		.sidebar {
+			width:35%;
+			float:right;
+			border:1px solid #000;
+			background:#E0E0E0;
+			padding:10px
+		}
+
+        .item {
+             padding-left:10%;
+             list-style-type:none;
+        }
+		
+     	@media (max-width: 1000px) {			        			
+			.leftColumn {				
+				width:100%;
+				float:none;
+			}	
+
             
-        <div class="item">
-         <h2>ENROLLMENT</h2>
-<img src="  
-http://fpoimg.com/250x120?text=Place Holder 05
- " width="250" height="120" />
-        <h4>Click here to find out more about Navigator's Service </h4>
-        </div>
-        
-        <div class="item">
-        <h2>FINANCIAL AID</h2>
-<img src="  
-http://fpoimg.com/250x120?text=Place Holder 05
- " width="250" height="120" />
-            <h4>Click here to find out more about Navigator's Service </h4>
-        </div>
-        
-       <div class="item">
-        <h2>REGISTRATION</h2>
-<img src="  
-http://fpoimg.com/250x120?text=Place Holder 05
- " width="250" height="120" />
-           <h4>Click here to find out more about Navigator's Service </h4>
-        </div>
-        
-               <div class="item">
-        <h2>ADVISING</h2>
-<img src="  
-http://fpoimg.com/250x120?text=Place Holder 05
- " width="250" height="120" />
-                   <h4>Click here to find out more about Navigator's Service </h4>
-        </div>
-        
-               <div class="item">
-        <h2>CAREER</h2>
-<img src="  
-http://fpoimg.com/250x120?text=Place Holder 05
- " width="250" height="120" />
-                   <h4>Click here to find out more about Navigator's Service </h4>
-        </div>
-        
-    </div>
-    <!-- End --- Content-remove this when each page filled -->
-
-
-<!-- Begin Content use this when each page filled -->
-    <div id="content">
-    <?php // if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
-    <h2><?php // the_title(); // get the page or posting title ?></h2> 
-    <?php // the_content(''); // get page or posting written content ?>
-    <?php // endwhile; endif; // end the loop ?>
-    </div>
- <!-- End Content use  this when each page filled -->
-<?php/* get_sidebar();*/ ?>
+			#middle {
+                width:100%;
+				float:none;
+            }
+	        .sidebar {											
+				width:50%;	
+				float:none;
+				margin:0 auto;
+			}	 
+			.post {margin: 0;}
+         }      
+    </style>    
+    
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
