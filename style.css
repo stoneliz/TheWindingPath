@@ -1,0 +1,436 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+Theme Name: Project_The Winding Path 0.6
+Author: Piano Hagens, Tomomi Matsuzakl, Liz Stone, Trang Pham, Sicheng Zho
+Author URI: https://www.phagens.com/noHurtToTry/
+Description: Web 210 WordPress Project_The Winding Path
+Version: 1.0
+*/
+
+* { margin: 0; padding: 0; }
+
+    html {
+		font-family: "Helvetica";
+        background: white; 
+        }
+			
+	h3, h2 {
+		font-family: "Helvetica";
+		font-size: 20px;
+		font-style: bold;
+    	color: #4a4a4a;
+    	padding: 3px;
+		padding-left: 15px;
+	}
+	pre, p{
+		font-family: "Helvetica";
+		font-size: 14px;
+		font-style: light oblique;
+    	color: #4a4a4a;
+		display:inline-block;
+    	padding: 3px;
+		text-decoration: none; 
+		padding-left: 10px; 
+	}
+	a {
+		font-family: "Helvetica";
+		font-size: 14px;
+		font-weight:bold;
+    	color: #fff;
+		display:inline-block;
+    	padding: 3px;
+		text-decoration: none; 
+		padding-left: 10px; 
+	}
+	 h4 {
+		font-family: "Helvetica;
+		font-size: 16px;
+    	font-style: bold;
+		color: #ffffff;
+		list-style-type: none;
+		padding-left: 10px;   
+	}
+	li{
+		font-family: "Helvetica;
+		font-size: 16px;
+    	font-style: bold;
+		color: #4a4a4a;
+		list-style-type: none;
+		}
+	li a:hover {
+    	color: #4a4a4a;
+	}
+ul.headerli > li > a, p.cyright a {
+		font-family: "Helvetica";
+		font-size: 14px;
+		font-style: light oblique;
+    	color: #4a4a4a;
+		display:inline-block;
+    	padding: 3px;
+		text-decoration: none; 
+		padding-left: 10px; 
+	}
+	img{max-width: 100%; text-align: center;}
+
+    body {
+        background: white;
+        width: 100%;
+        margin:0 auto;
+	   }
+    img{max-width: 100%;}		
+
+   
+	#toggle {
+		display: none;
+	}
+
+      #header {
+		heith:200px;
+        max-width: 940px; 
+        margin: 5px auto;
+    }
+    div.logo
+    {
+        padding-left: 50px;
+        padding-bottom: 5px;
+        float: left;
+        width: 180px;
+    }
+
+        
+    div.quicklinks{
+        float: right;
+        margin: 20px;
+        width: 250px;
+    }
+        div.quicklinks ul{
+        float: right;
+        width: 150px;
+        font-size:16px;
+        } 
+        div.quicklinks ul li.login{
+         width: 70px;
+         float: left;
+		 padding-left: 0;
+        }
+        div.quicklinks ul li.faq{
+        width: 70px;
+        float: right;
+		padding-right: 0;
+        }
+        div.donate{
+		text-align: center;
+        float: right;
+        width: 230px;
+		margin:20px auto 0 auto;
+        }
+
+		img#button {
+		width:150px;
+		max-width:100%;
+		padding-right: 20px;
+		}
+		
+        p.thanku{
+            padding-right: 0;
+			font-size:16px;
+        }
+
+/*------------------------------#navigation--------------------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+
+    #middle {
+        max-width: 940px; 	
+        background-position: center;
+        background-repeat: repeat-y;	
+        overflow: hidden; 
+        margin: 0 auto;
+        padding: 0; 
+        border-radius: 10px; 
+        }
+    .middledonate {
+        z-index: 999999999999;
+        position: absolute;
+        left: 120px;
+        top: 240px;
+    }	
+	
+/*--------------------------------------------------------------------------*/
+div#sub-navigation{
+    background: #cdcdcd;
+    margin: 20px auto 20px;
+    padding-left: 15px;
+    }
+div#recent-posts-2{
+    background: #c0c0c0;
+    margin: 20px auto 5px;
+    padding-left: 15px;
+}
+
+div#recent-comments-2, div#archives-2, div#categories-2{
+    background: #a9a9a9;
+    padding-left: 15px;
+}
+div#meta-2{
+    padding: 10px auto auto 5px;
+    background: #808080;
+    margin: 5px auto 5px;
+    padding-left: 15px;
+}
+div#calendar-2{
+    width: 100%;
+    background: #778899;
+    padding-left: 15px;
+    margin: 5px auto 5px;
+}
+	#widgets { 
+		overflow: hidden;
+	}
+    #widgets section.widget-item ul > li{
+        display: inline-block;
+        padding: 10px;
+    }
+	#widgets section.widget-item {
+        width: 30%;
+		max-width: 280px;
+		float: left;	
+		margin: 2px;
+		padding: 10px;	}
+	
+	#widgets section.widget-item:last-child {
+		width: 30%;
+		max-width: 280px;
+	   	float: right;
+        margin-right: 0;
+	}
+	input#searchsubmit{
+    	font-size: 12px;
+	}
+    div#search-2{width: 100%;}
+	#sidebar {
+		width: 31.914893617021%;
+		float: right;
+   		margin: 0 auto;
+	}	
+#sidebar ul li a:hover{color: #ffffff;}
+    #sidebar ul li a, #meta-2 ul li a {
+        line-height: 1.9em;
+        padding: 5px;}
+    .post{
+        width:58%;
+        float:left;
+        margin: 10px;
+        padding: 10px;}
+    }
+    .postContent{
+        padding: 20px;
+        line-height: 1.5em;
+        font-size: 18px;
+    }
+	#sidebar blockquote {
+		position: relative;
+		padding: 10px;
+		margin: 20px 0;
+		border-top: 2px solid #777777;
+		border-bottom: 2px solid #777777;
+		font-style: italic;
+	}
+	
+	#sidebar blockquote:before {
+		position: absolute;
+		width: 24px;
+		height: 20px;
+		font-size: 3em;
+		color: #777777;
+		content:'“';
+		background-color: #999;
+		top: -18px;
+		left: -4px;
+	}
+
+
+/*--------------------------------------------------------------------------*/
+
+/*---------------------------#content--------------------------------------------*/
+
+    #content {
+        float: left;
+        width: 65.957446808511%;
+		margin: 20px auto 20px;
+		overflow: hidden; 
+	}
+
+    #content div.item ul > li{
+        display: inline-block;
+    }
+	#content div.item {
+		max-width:280px;
+		display:inline-block;
+        width: 100%;
+		margin: 3px;
+		padding: 3px;	
+		overflow: hidden; 
+	}
+	
+	#content div.item:last-child {	   
+        margin-right: 0;
+	}
+		
+	div#content img.size-enlarge {
+	align-content: center;
+    margin: 0 auto;
+    width: 200%;
+    padding: 5px;
+    }
+		
+	
+	#content a:hover img {
+		border: 1px solid #cccccc;
+	}
+	#content img.featured {
+		margin-bottom: 10px;
+	}
+		
+		/* ----- plugin menu ----- */
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+	
+    #footer {		
+        width: 100%;
+		height: 60px;
+        margin: auto;
+        font-size: 16px;  
+        background-color:  #7ba251;
+        }
+
+		#footer p.cyright {
+		display: inline-block;
+		width: 100%;
+		padding-top:25px;
+		margin: 0 auto;
+		text-align:center;
+		color: #4a4a4a;		
+		}
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {	
+	
+}
+
+/* Tablet Screen Set to 769px or Below  */
+@media screen and (max-width: 769px) {
+
+    img#button.middledonate{
+        left: 150px;
+        top: 160px;  
+ }
+    img#button.middledonate img{max-width: 100%}
+
+	#header, div#navigation {
+        display: none;
+	}	
+	div.post{
+		margin: 10px;
+		padding: 10px;}
+	#middle {
+		border-radius: 0px; /* removes rounded corners */
+	}
+	div#content{
+		text-align: center;
+		align-content: center;
+	}
+	div.item {
+		text-align: center;
+		align-content: center;
+	}
+	#widgets section.widget-item {
+        width: 100%;
+		max-width: 768px;
+		float: left;
+		margin: 10px;
+		padding: 10px;
+
+	}
+	#widgets section.widget-item:last-child {
+        width: 100%;
+		max-width: 768px;
+		float: left;
+		margin: 10px;
+		padding: 10px;
+	}
+}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+img#button.middledonate{
+	width: 80px;
+    left: 45px;
+    top: 65px;  
+ }
+img#button.middledonate img{    max-width: 80px;}
+    .headerlinks, .pxwidth {
+    	display: none;
+    }
+	#header {        
+        border: 2px solid #888;
+        background: #ccc;
+        padding: 0;
+        margin: 7px;
+        height: 50px;
+	}
+	
+	#logo {        
+        width: 50%;
+        max-width: 50%;
+        padding: 0;
+        height: 50px;
+	}
+	#toggle { 
+        position: absolute;
+		display: block; /* make our toggle visible */
+		float: right; /* float our toggle right */
+		top: 21px; /* move this into place */
+        right: 20px;
+        
+	}
+	#middle {
+		padding: 20px 10px;
+	}
+	
+	#content {
+		width: 100%;
+		text-align: center;
+		align-content: center;
+		}
+    .post{
+        padding: 10px;
+        width:95%;
+        margin: 0 auto;
+    }
+    .post img{max-width:90%;}
+    .post p{
+        padding-right: 20px;
+    }
+    .leftColumn{
+        padding: 10px;
+        width:95%;
+    }
+    .postContent{
+        width:95%;
+        padding: 10px;
+    }	
+    #sidebar {
+        padding: 10px;
+        width:95%;
+        margin: 0 auto;
+    }
+	#widgets section.widget-item {
+		margin: 0 auto;
+        width:95%;
+	}
+    #widgets section.widget-item img{
+        max-width: 80%;
+    }
+	
+}
